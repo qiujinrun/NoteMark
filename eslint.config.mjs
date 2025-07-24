@@ -26,8 +26,8 @@ export default tseslint.config(
       ...eslintPluginReactHooks.configs.recommended.rules,
       ...eslintPluginReactRefresh.configs.vite.rules,
       'prettier/prettier': ['error', { endOfLine: 'auto' }],
-      '@typescript-eslint/explicit-function-return-type': 'off',
+      '@typescript-eslint/explicit-function-return-type': 'off'
     }
   },
-  // eslintConfigPrettier
+  eslintConfigPrettier
 )

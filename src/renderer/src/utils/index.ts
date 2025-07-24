@@ -2,7 +2,7 @@ import clsx, { ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 
 //时间
-export const dateFormatter = new Intl.DateTimeFormat(window.context.locale,{
+export const dateFormatter = new Intl.DateTimeFormat(window.context.locale, {
   dateStyle: 'short',
   timeStyle: 'short',
   timeZone: 'UTC'

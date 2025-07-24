@@ -5,7 +5,7 @@ import { dialog } from 'electron'
 import { ensureDir, readdir, readFile, remove, stat, writeFile } from 'fs-extra'
 import { homedir } from 'os'
 import path from 'path'
-import { isEmpty } from 'lodash' 
+import { isEmpty } from 'lodash'
 // import { root } from "postcss"
 
 export const getRootDir = () => {
@@ -22,10 +22,9 @@ export const getNotes: GetNotes = async () => {
     withFileTypes: false
   })
   const notes = notesFileNames.filter((fileName) => fileName.endsWith('.md'))
-  if(isEmpty(notes)){
+  if (isEmpty(notes)) {
     console.info('No notes found')
   }
-
 
   //返回一个NoteInfo[]数组，包含笔记的标题和最后修改时间
   return Promise.all(notes.map(getNoteInfoFromFilename))

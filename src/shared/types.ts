@@ -1,4 +1,4 @@
-import { NoteContent, NoteInfo } from "./models";
+import { NoteContent, NoteInfo } from './models'
 
 //注册
 export type GetNotes = () => Promise<NoteInfo[]>

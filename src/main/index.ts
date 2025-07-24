@@ -65,9 +65,9 @@ app.whenReady().then(() => {
   // ipcMain.on('ping', () => console.log('pong'))
   ipcMain.handle('getNotes', (_, ...args: Parameters<GetNotes>) => getNotes(...args))
   ipcMain.handle('readNote', (_, ...args: Parameters<ReadNote>) => readNote(...args))
-  ipcMain.handle('writeNote', (_,...args: Parameters<WriteNote>) => writeNote(...args))
-  ipcMain.handle('createNote', (_,...args: Parameters<CreateNote>) => createNote(...args))
-  ipcMain.handle('deleteNote', (_,...args: Parameters<DeleteNote>) => deleteNote(...args))
+  ipcMain.handle('writeNote', (_, ...args: Parameters<WriteNote>) => writeNote(...args))
+  ipcMain.handle('createNote', (_, ...args: Parameters<CreateNote>) => createNote(...args))
+  ipcMain.handle('deleteNote', (_, ...args: Parameters<DeleteNote>) => deleteNote(...args))
   //创建窗口
   createWindow()
 

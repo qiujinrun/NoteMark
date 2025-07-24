@@ -7,18 +7,11 @@ body {
   background-size: cover;
   user-select: none;
   background: transparent;
-   /* ✅ 背景透明 */
-  background: rgba(30, 30, 30, 0.5); 
+  /* ✅ 背景透明 */
+  background: rgba(30, 30, 30, 0.5);
   /* 半透明深色背景 */
-  backdrop-filter: 
-    blur(var(--blur-strength)) 
-    brightness(0.6) 
-    contrast(1.8);
-  -webkit-backdrop-filter: 
-    blur(var(--blur-strength)) 
-    brightness(0.6) 
-    contrast(1.8);
-
+  backdrop-filter: blur(var(--blur-strength)) brightness(0.6) contrast(1.8);
+  -webkit-backdrop-filter: blur(var(--blur-strength)) brightness(0.6) contrast(1.8);
 }
 
 code {
@@ -160,7 +153,6 @@ code {
     border: none;
   }
 }
-
 
 @media (max-width: 720px) {
   .text {
