@@ -1,0 +1,43 @@
+
+/* 将使用Tailwind的方式来写css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #root {
+    @apply h-full;
+    /* @apply  w-full; */
+    @apply flex-1;
+    @apply w-full;
+  }
+
+  html,
+  body {
+    @apply h-full w-full;
+    @apply m-0 p-0;
+
+    @apply select-none;
+
+    @apply bg-transparent;
+
+    @apply font-mono antialiased text-white;
+
+    @apply overflow-hidden;
+  }
+  header {
+    -webkit-app-region: drag;
+  }
+  button {
+    -webkit-app-region: no-frag;
+  }
+  ::-webkit-scrollbar{
+    @apply w-2;
+  }
+  ::-webkit-scrollbar-thumb{
+    @apply bg-[#555] rounded-md;
+  }
+  ::-webkit-scrollbar-track{
+    @apply bg-transparent;
+  }
+}
